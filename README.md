@@ -5,7 +5,7 @@ To write a verilog code for 4bit adder and verify the functionality using Test b
 
  Write Verilog Code
 
- Verify the Functionality using Test-bench
+ Verify the Functionality using Test-bench.
 
 ## Tool Required: 
 Functional Simulation: nclaunch Simulator (nclaunch) 
@@ -67,28 +67,28 @@ Developed by: Register Number*/
 	tcsh (Invokes C-Shell) 
 
 	source /cadence/install/cshrc (mention the path of the tools) 
-
-      (The path of cshrc could vary depending on the installation destination)
       
 	After this you can see the window like below 
+![sathya](https://github.com/Sathyaseelanj/4Bit_Adder_nclaunch_sim/blob/main/Screenshot%20(46).png)
+
 
 ### Fig 3:Invoke the Cadence Environment
 
 	To Launch Simulation tool 
-
-•	linux:/> nclaunch -new& // “-new” option is used for invoking NCVERILOG for the first time for any design 
-
-or
-
-•	linux:/> nclaunch& // On subsequent calls to NCVERILOG 
-
+```bash
+•	linux:/> nclaunch -new& // “-new” option is used for invoking NCVERILOG for the first time for any design
+```
 	It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple Step .
+![sathya](https://github.com/Sathyaseelanj/4Bit_Adder_nclaunch_sim/blob/main/Screenshot%20(47).png)
 
 ### Fig 4:Setting Multi-step simulation
 
 	Select Multiple Step and then select “Create cds.lib File” .
 
 	Click the cds.lib file and save the file by clicking on Save option 
+
+![sathya](https://github.com/Sathyaseelanj/4Bit_Adder_nclaunch_sim/blob/main/Screenshot%20(48).png)
+
 
 ### Fig 5:cds.lib file Creation
 
@@ -100,7 +100,8 @@ or
 
 •	A Click “OK” in the “nclaunch: Open Design Directory” window as shown in below figure 
 
-![image](https://github.com/user-attachments/assets/781b297a-11e9-4140-89c5-ee3b0d15bbd4)
+![sathya](https://github.com/user-attachments/assets/781b297a-11e9-4140-89c5-ee3b0d15bbd4)
+
 
 ### Fig 6: Selection of Don’t include any libraries
 
@@ -113,6 +114,9 @@ or
 	To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation. 
 
 ### Fig 7: Nclaunch Window
+
+![sathya](https://github.com/Sathyaseelanj/4Bit_Adder_nclaunch_sim/blob/main/Screenshot%20(26).png)
+
 
 ## Step 1: Compilation:– Process to check the correct Verilog language syntax and usage 
 
@@ -138,6 +142,8 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 	Select the test bench and compile it. It will come under worklib. Under Worklib you can see the module and test-bench. 
 
 	The cds.lib file is an ASCII text file. It defines which libraries are accessible and where they are located. It contains statements that map logical library names to their physical directory paths. For this Design, you will define a library called “worklib”
+![sathya](https://github.com/Sathyaseelanj/4Bit_Adder_nclaunch_sim/blob/main/Screenshot%20(29).png)
+
 
 ## Step 2: Elaboration:– To check the port connections in hierarchical design 
 	Inputs: Top level design / test bench Verilog codes 
@@ -155,6 +161,9 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 	After elaboration the file will come under snapshot. Select the test bench and elaborate it.
 
 ### Fig 9: Elaboration Launch Option
+![sathya](https://github.com/Sathyaseelanj/4Bit_Adder_nclaunch_sim/blob/main/Screenshot%20(49).png)
+
+
 
 ## Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
 
@@ -168,25 +177,17 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 
 ### Fig 10: Design Browser window for simulation
 
+![sathya](https://github.com/Sathyaseelanj/4Bit_Adder_nclaunch_sim/blob/main/Screenshot%20(50).png)
+
 ### Fig 11: Launching Simulation Waveform WindowSimulation Waveform Window
 
+![sathya](https://github.com/Sathyaseelanj/4Bit_Adder_nclaunch_sim/blob/main/Screenshot%20(51).png)
+
 ### Fig 12: Simulation Waveform Window
+![sathya](https://github.com/Sathyaseelanj/4Bit_Adder_nclaunch_sim/blob/main/Screenshot%20(52).png)
+
 
 ### Result:
 
 The functionality of a 4-bit adder was successfully verified using a test bench and simulated with the nclaunch tool.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
